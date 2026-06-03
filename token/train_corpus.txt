@@ -1,0 +1,20 @@
+Tokenization is the first step in any NLP pipeline.
+Tokens can be words, subwords, or characters.
+Subword tokenization balances vocabulary size and sequence length.
+BPE and WordPiece are the most popular subword methods.
+GPT uses BPE tokenization while BERT uses WordPiece.
+The tokenizer converts text into token IDs that the model understands.
+A good tokenizer should handle unseen words gracefully.
+Training a tokenizer means learning the best way to split text.
+Low frequency words get split into smaller subword units.
+High frequency words remain as single tokens.
+Language models predict the next token in a sequence.
+Transformers use self-attention to process all tokens in parallel.
+The embedding layer converts token IDs into dense vectors.
+Positional encoding tells the model the order of tokens.
+Multi-head attention allows the model to focus on different parts.
+The feed-forward network processes each position independently.
+Layer normalization stabilizes training of deep networks.
+Dropout prevents overfitting during training.
+The output layer projects hidden states to vocabulary logits.
+Cross-entropy loss measures how well the model predicts tokens.
