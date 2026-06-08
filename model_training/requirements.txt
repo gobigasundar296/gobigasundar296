@@ -1,0 +1,9 @@
+torch
+transformers
+accelerate>=1.1.0
+datasets
+sentence-transformers
+# faiss-cpu  # optional accelerator for RAG; NumPy is used by default (faiss has no Python 3.14 wheels yet)
+numpy
+tqdm
+jsonlines
